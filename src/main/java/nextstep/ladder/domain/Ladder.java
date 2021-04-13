@@ -9,7 +9,7 @@ import nextstep.ladder.DirectionStrategy;
 public class Ladder {
 
   private static final Random RANDOM = new Random();
-  private List<LadderLine> lines;
+  private final List<LadderLine> lines;
 
   private Ladder(List<LadderLine> lines) {
     this.lines = lines;

@@ -2,7 +2,7 @@ package nextstep.ladder.domain;
 
 public class Result {
 
-  private String name;
+  private final String name;
 
   private Result(String name) {
     if (name.length() > 5) {

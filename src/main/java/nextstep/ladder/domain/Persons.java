@@ -1,12 +1,14 @@
 package nextstep.ladder.domain;
 
+import static java.util.Collections.unmodifiableList;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Persons {
 
-  private List<Person> persons;
+  private final List<Person> persons;
 
   private Persons(List<Person> persons) {
     this.persons = persons;
@@ -20,7 +22,7 @@ public class Persons {
   }
 
   public List<Person> getPersons() {
-    return persons;
+    return unmodifiableList(persons);
   }
 
   public int size() {

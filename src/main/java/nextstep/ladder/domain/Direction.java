@@ -5,8 +5,8 @@ import nextstep.ladder.DirectionStrategy;
 
 public class Direction {
 
-  private boolean left;
-  private boolean right;
+  private final boolean left;
+  private final boolean right;
 
   private Direction(boolean left, boolean right) {
     if (left && right) {

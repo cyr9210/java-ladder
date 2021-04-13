@@ -7,7 +7,7 @@ import nextstep.ladder.DirectionStrategy;
 
 public class LadderLine {
 
-  private List<Point> points;
+  private final List<Point> points;
 
   private LadderLine(List<Point> points) {
     this.points = points;
@@ -45,10 +45,6 @@ public class LadderLine {
 
   public int size() {
     return points.size();
-  }
-
-  public List<Point> getPoints() {
-    return points;
   }
 
   @Override

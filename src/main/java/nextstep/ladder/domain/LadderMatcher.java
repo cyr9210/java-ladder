@@ -8,8 +8,8 @@ import java.util.stream.IntStream;
 
 public class LadderMatcher {
 
-  private Persons persons;
-  private Results results;
+  private final Persons persons;
+  private final Results results;
 
   private LadderMatcher(Persons persons, Results results) {
     if (persons.size() != results.size()) {
